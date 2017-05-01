@@ -1,0 +1,183 @@
+body{
+    background: #f9f1cd;
+}
+
+.contain{
+    width: 640px;
+    margin: 0 auto;
+    .banner{
+        width: 100%;
+    }
+    .header{
+        background-color: #f4f4f4;
+        padding: 5px 0px;
+        width: 75%;
+        margin: 0px auto 15px auto;
+        border-radius: 6px;
+        text-align: center;
+        border: 3px solid #2be6fc;
+        p{
+            font-size: 20px;
+            color: #0d8093;
+            font-weight: 600;
+            line-height: 1.5;
+            span{
+                color: #f02929;
+            }
+        }
+        .p1{
+            font-size: 26px;
+            .times{
+                font-size: 28px;
+                color: #f02929;
+            }
+        }
+    }
+    .body{
+        width: 100%;
+        background: url(../img/bg1.png) no-repeat;
+        background-size: 100% auto;
+        .dial{
+            width: 412px;
+            height: 413px;
+            margin: 0 auto;
+            position: relative;
+            .pointer{
+                width: 32%;
+                height: 40%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-left: -16%;
+                margin-top: -20%;
+                cursor: pointer;
+            }
+        }
+    }
+    .footer{
+        width: 100%;
+        height: 170px;
+        background: url(../img/bg2.png) no-repeat;
+        background-size: 100% auto;
+        margin-top: -120px;
+        position: relative;
+        a{
+            color: #0d8093;
+            font-weight: 600;
+            position: absolute;
+            font-size: 23px;    
+        }
+        .records{
+            left: 0;
+            bottom: 0;
+        }
+        .rule{
+            right: 0;
+            bottom: 0;
+        }
+    }
+    .cover{
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        position: fixed;
+        left: 0;
+        top: 0;
+        display: none;
+        .awards{
+            width: 480px;
+            height: 408px;
+            border: 1px solid #000;
+            position: absolute;
+            left: 50%;
+            top: 5%;
+            margin-left: -240px;
+            border-radius: 18px;
+            background: #fff;
+            .img-award{
+                width: 100%;
+            }
+            .info-award{
+                width: 80%;
+                margin: 0px auto;
+                text-align: center;
+                font-size: 19px;
+                color: #898989;
+                padding: 10px 0px;
+                color: #ff4338;
+            }
+            .btn{
+                background-color: #ff4338;
+                display: block;
+                width: 240px;
+                margin: 0px auto 20px auto;
+                padding: 6px 0px;
+                font-size: 30px;
+                color: #FFF;
+                text-align: center;
+                border: none;
+                border-radius: 10px;
+                outline: none;
+                cursor: pointer;
+            }
+            .closed{
+                position: absolute;
+                top: 7px;
+                right: 15px;
+                overflow: hidden;    
+                font-weight: bolder;
+                font-size: 30px;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+
+
+@media screen and (max-width: 970px){
+    .contain{
+        width: 100%;
+        .header{
+            p{
+                font-size: 15px;
+            }
+            .p1{
+                font-size: 16px;
+                .times{
+                    font-size: 17px;
+                }
+            }
+        }
+        .body{
+            .dial{
+                width: 82%;
+                height: auto;
+            }
+        }
+        .footer{
+            height: 120px;
+            margin-top: -20%;
+            a{
+                font-size: 15px;
+            }
+            .records{
+                left: 10px;
+            }
+            .rule{
+                right: 10px;
+            }
+        }
+        .cover{
+            .awards{
+                width: 86%;
+                height: auto;
+                margin-left: -43%;
+            }
+        }
+    }
+}
+
+
+
